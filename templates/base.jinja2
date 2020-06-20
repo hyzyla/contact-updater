@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function post(url, data) {
+            return fetch(url, {
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                redirect: 'follow',
+                referrer: 'no-referrer',
+                body: JSON.stringify(data)
+            }).then(function (response) {
+                if (response.redirected) {
+                    console.log('I am redirecting', response.url);
+                    window.location.href = response.url;
+                }
+            })
+        }
+    </script>
+    <title>APP</title>
+
+    {% block head %}
+    {% endblock %}
+
+</head>
+<body>
+
+{% block body %}
+{% endblock %}
+
+</body>
+</html>

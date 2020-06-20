@@ -1,0 +1,5 @@
+indexes:
+- kind: User
+  ancestor: yes
+  properties:
+    - name: token

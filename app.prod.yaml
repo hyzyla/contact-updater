@@ -1,0 +1,7 @@
+runtime: python37
+entrypoint: gunicorn -b :$PORT app:app
+
+env_variables:
+  OAUTHLIB_INSECURE_TRANSPORT: 0
+  REDIRECT_URL: https://contact-updater-33387.appspot.com/auth
+  GOOGLE_APPLICATION_CREDENTIALS: ./app-secret.json

@@ -1,0 +1,4 @@
+cron:
+- description: "Update contacts"
+  url: /update
+  schedule: every 10 minutes

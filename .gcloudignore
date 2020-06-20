@@ -1,0 +1,6 @@
+.gcloudignore
+.git
+.gitignore
+.env
+.idea
+.git
