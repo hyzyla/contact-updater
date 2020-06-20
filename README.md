@@ -12,7 +12,7 @@
 
 # Run locally
 ```shell script
-1. REDIRECT_URL=http://127.0.0.1:5000/auth GOOGLE_APPLICATION_CREDENTIALS=./app_secret.json  FLASK_DEBUG=1 flask run
+REDIRECT_URL=http://127.0.0.1:5000/auth GOOGLE_APPLICATION_CREDENTIALS=./app_secret.json  FLASK_DEBUG=1 flask run
 ```
 
 
